@@ -1,0 +1,184 @@
+
+:root {
+    --warna-utama:   #0d3b6e;
+    --warna-aksen:   #2ecc71;
+    --warna-aksen2:  #27ae60;
+    --warna-bg:      #f0f4f8;
+    --warna-putih:   #ffffff;
+    --warna-abu:     #b0bec5;
+    --warna-teks:    #2d3436;
+    --warna-nav:     #092d54;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--warna-bg);
+    color: var(--warna-teks);
+    line-height: 1.7;
+}
+
+.header {
+    background-color: var(--warna-utama);
+    color: var(--warna-putih);
+    text-align: center;
+    padding: 36px 20px;
+    border-bottom: 4px solid var(--warna-aksen);
+}
+
+.header h1 {
+    font-size: 2rem;
+    margin-bottom: 6px;
+    letter-spacing: 1px;
+}
+
+.header p {
+    font-size: 0.9rem;
+    color: var(--warna-abu);
+}
+
+.navbar {
+    background-color: var(--warna-nav);
+    text-align: center;
+    padding: 12px;
+}
+
+.navbar a {
+    color: var(--warna-abu);
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 0.9rem;
+}
+
+.navbar a:hover {
+    color: var(--warna-aksen);
+}
+
+.konten {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 16px;
+}
+
+.card {
+    background-color: var(--warna-putih);
+    border-radius: 10px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    border-left: 4px solid var(--warna-aksen);
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    color: var(--warna-utama);
+    margin-bottom: 14px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.foto {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    margin: 16px auto 0;
+    border: 3px solid var(--warna-aksen);
+}
+
+.label-form {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+    color: var(--warna-utama);
+}
+
+.input-teks {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #b0bec5;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    outline: none;
+}
+
+.input-teks:focus {
+    border-color: var(--warna-aksen);
+}
+
+.kotak-radio {
+    border: 1px solid #b0bec5;
+    border-radius: 6px;
+    padding: 12px 16px;
+}
+
+.kotak-radio legend {
+    font-weight: bold;
+    padding: 0 6px;
+    font-size: 0.9rem;
+    color: var(--warna-utama);
+}
+
+.kotak-radio input {
+    margin-left: 10px;
+    cursor: pointer;
+    accent-color: var(--warna-aksen);
+}
+
+.kotak-radio input:first-of-type {
+    margin-left: 0;
+}
+
+.tombol {
+    background-color: var(--warna-aksen);
+    color: var(--warna-putih);
+    border: none;
+    padding: 11px 30px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.tombol:hover {
+    background-color: var(--warna-aksen2);
+}
+
+.footer {
+    background-color: var(--warna-utama);
+    color: var(--warna-abu);
+    text-align: center;
+    padding: 18px;
+    font-size: 0.85rem;
+}
+
+@media (max-width: 600px) {
+
+    .header h1 {
+        font-size: 1.5rem;
+    }
+
+    .konten {
+        padding: 0 12px;
+        margin: 20px auto;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    .foto {
+        max-width: 100%;
+    }
+
+    .tombol {
+        width: 100%;
+    }
+}
